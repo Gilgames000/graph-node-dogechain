@@ -74,7 +74,7 @@ pub struct EthereumAdapter {
 /// with the default. This means that we do not support indexing against a Geth node with
 /// `RPCGasCap` set below 50 million.
 // See also f0af4ab0-6b7c-4b68-9141-5b79346a5f61.
-const ETH_CALL_GAS: u32 = 50_000_000;
+const ETH_CALL_GAS: u32 = 30_000_000;
 
 impl CheapClone for EthereumAdapter {
     fn cheap_clone(&self) -> Self {
